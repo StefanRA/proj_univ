@@ -154,6 +154,8 @@
     <ClInclude Include="activity.h" />
     <ClInclude Include="activityrepository.h" />
     <ClInclude Include="course.h" />
+    <ClInclude Include="grade.h" />
+    <ClInclude Include="discipline.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="person.h" />
     <ClInclude Include="personrepository.h" />
@@ -170,6 +172,8 @@
     <ClCompile Include="activity.cpp" />
     <ClCompile Include="activityrepository.cpp" />
     <ClCompile Include="course.cpp" />
+    <ClCompile Include="discipline.cpp" />
+    <ClCompile Include="grade.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
