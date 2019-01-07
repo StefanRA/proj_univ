@@ -4,14 +4,20 @@
 #include "room.h"
 #include "person.h"
 
-class activity{
 
+class Activity {
 public:
-	activity(room* location, Person* owner);
-
-private:
-    room* mLocation;
-    Person* mOwner;
-
-
+	Activity() {}
+	~Activity();
+	Activity(Room* location, Person* owner, std::string description);
+	std::string getLocation();
+	std::string getOwner();
+	std::string getDescription();
+	void setLocation(Room* room);
+	void setOwner(Person* owner);
+	void setDescription(std::string description);
+protected:
+	Room* mLocation;
+	Person* mOwner;
+	std::string mDescription;
 };

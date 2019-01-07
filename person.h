@@ -23,7 +23,7 @@ public:
     string getmCNP();
 	void addrole(role*);
 	Person(string FirstName = "", string LastName = "", string CNP = "", string Email = "", string Birthday = "");
-
+	~Person();
 protected:
 	std::string mFirstName;
 	std::string mLastName;
@@ -31,9 +31,6 @@ protected:
 	std::string mEmail;
 	std::string mBirthday;
 	vector<role*>mRoles;
-	
-	~Person();
-
 };
 
 

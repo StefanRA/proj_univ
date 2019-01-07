@@ -4,7 +4,7 @@
 #include <iostream>
 
 
-studentrole::studentrole():role(role::STUDENT_ROLE)
+StudentRole::StudentRole():Role(Role::STUDENT_ROLE)
 {
 
 }

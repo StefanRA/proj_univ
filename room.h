@@ -2,9 +2,9 @@
 #include <string>
 #include <iostream>
 
-class room{
+class Room{
 public:
-	room(std::string);
+	Room(std::string);
 
 private:
     std::string mName;

@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <string>
@@ -7,12 +6,12 @@
 #include "grade.h"
 #include <vector>
 
-class studentrole:public role
+class StudentRole :public Role
 {
 private:
-	std::vector<grade*> mGrades;
+	std::vector<Grade*> mGrades;
 	int mStudyGrup;
 
 public:
-    studentrole();
+	StudentRole();
 };
