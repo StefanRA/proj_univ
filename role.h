@@ -4,7 +4,7 @@
 #include <vector>
 //#include "studentrole.h"
 
-class role
+class Role
 {
 public:
 	enum RoleType
@@ -14,11 +14,11 @@ public:
 	};
 
 public:
-    role(RoleType);
+	Role(RoleType);
  
 private:
     RoleType mType;
-	std::vector<role*> mRoles;
+	std::vector<Role*> mRoles;
 };
 
 

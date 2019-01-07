@@ -3,15 +3,16 @@
 #include "course.h"
 #include "teacher.h"
 #include "student.h"
+#include "studentrole.h"
 #include "person.h"
 #include "room.h"
 #include "activity.h"
 
 int main()
 {
-    std::vector<room*> rooms;
+    std::vector<Room*> rooms;
     std::vector<Person*> persons;
-    std::vector<activity*> activities;
+    std::vector<Activity*> activities;
 
 	teacher T;
 	std::cin>>T;
@@ -20,10 +21,10 @@ int main()
 	std::cin>>s;
 	std::cout<<s;
 
-	rooms.push_back(new room("A3"));
+	rooms.push_back(new Room("A3"));
 	persons.push_back(new Person("Andrei"));
-	activities.push_back(new activity(rooms[0], persons[0]));
-	persons[0]->addrole(new studentrole());
+	activities.push_back(new Activity(rooms[0], persons[0]));
+	persons[0]->addrole(new StudentRole());
 
 	return 0;
 }

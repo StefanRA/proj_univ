@@ -48,7 +48,7 @@ void Discipline::removeActivity(std::string name) {
 	std::vector<Activity*>::iterator it;
 	bool valide = false;
 	for (it = mActivities.begin(); it != mActivities.end(); it++) {
-		if ((*it)->get_Description() == name) {
+		if ((*it)->getDescription() == name) {
 			mActivities.erase(it);
 			valide = true;
 			break;
@@ -62,18 +62,18 @@ void Discipline::addParticipant(Person* person) {
 	this->mParticipants.push_back(person);
 	StudentRole* student = NULL;
 	try {
-		student = dynamic_cast<StudentRole*>(person->displayRole(1));
+		student = dynamic_cast<StudentRole*>(Person->displayRole(1));
 	}
 	catch (std::runtime_error const e) {}
 	if (student != NULL)
-		student->addMark(NULL, this);
+		student->addGrade(NULL, this);
 }
 
-void Discipline::removeParticipantByCnp(std::string CNP) {
+void Discipline::removeParticipantByCnp(std::int CNP) {
 	std::vector<Person*>::iterator it;
 	bool valide = false;
 	for (it = mParticipants.begin(); it != mParticipants.end(); it++) {
-		if ((*it)->get_CNP() == CNP) {
+		if ((*it)->getmCNP() == CNP) {
 			mParticipants.erase(it);
 			valide = true;
 			break;
@@ -87,7 +87,7 @@ void Discipline::removeByFullName(std::string firstName, std::string lastName) {
 	std::vector<Person*>::iterator it;
 	bool valide = false;
 	for (it = mParticipants.begin(); it != mParticipants.end(); it++) {
-		if ((*it)->get_LastName() == lastName && (*it)->get_FirstName() == firstName) {
+		if ((*it)->getmLastName() == lastName && (*it)->getmFirstName() == firstName) {
 			mParticipants.erase(it);
 			valide = true;
 			break;
