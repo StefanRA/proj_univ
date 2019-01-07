@@ -68,7 +68,7 @@ std::istream & operator >>(std::istream &in, Person &p)
 
 }
 
-void Person::addrole(Role* role)
+void Person::addRole(Role* role)
 {
 	mRoles.push_back(role);
 }

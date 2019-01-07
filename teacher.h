@@ -1,11 +1,11 @@
 #pragma once
 #include "person.h"
 
-class teacher: public Person {
+class Teacher: public Person {
 
 public: 
-	teacher();
-	~teacher();
+	Teacher();
+	~Teacher();
 private:
 	
 };

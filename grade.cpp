@@ -1,4 +1,5 @@
 #include "grade.h"
+#include "pch.h"
 
 Grade::Grade(float grade, Discipline* discipline) {
 	this->mGrade = grade;

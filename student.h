@@ -2,15 +2,17 @@
 #include "person.h"
 #include <string>
 
-class student : public Person {
+class Student : public Person {
 
 public:
-	student();
-	~student();
+	void citire();
+	void afisare();
+	int getNrMatricol();
+	int getAnStudii();
+	string getFormaFinantare();
+private:
 	int NrMatricol;
 	int AnStudii;
-	std::string FormaFinantare;
-private:
-	
+	string FormaFinantare;
 };
 

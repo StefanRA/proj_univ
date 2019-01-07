@@ -26,7 +26,6 @@ public:
 	void updateGrade(float grade, std::string discipline);
 	void setStudyGroup(int studyGroup);
 	Grade* getGrade(int iterator);
-	(int iterator);
 	bool isGradeSet(Discipline* discipline);
 private:
 	int mIDNumber;
@@ -35,4 +34,4 @@ private:
 	std::vector<Grade*> mGrades;
 	int mStudyGroup;
 };
-};
+

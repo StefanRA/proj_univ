@@ -63,14 +63,14 @@ void Discipline::addParticipant(Person* person) {
 	this->mParticipants.push_back(person);
 	StudentRole* student = NULL;
 	try {
-		student = dynamic_cast<StudentRole*>(Person->displayRole(1));
+		student = dynamic_cast<StudentRole*>(person->displayRole(1));
 	}
 	catch (std::runtime_error const e) {}
 	if (student != NULL)
 		student->addGrade(NULL, this);
 }
 
-void Discipline::removeParticipantByCnp(std::int CNP) {
+void Discipline::removeParticipantByCnp(string CNP) {
 	std::vector<Person*>::iterator it;
 	bool valide = false;
 	for (it = mParticipants.begin(); it != mParticipants.end(); it++) {

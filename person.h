@@ -18,7 +18,7 @@ public:
     void setmBirthday(string birthD);
     void setmCNP(string CNP);
     void setmEmail(string Email);
-	void addrole(Role*);
+	void addRole(Role* role);
 	Role* displayRole(int role);
     string  getmFirstName( );
     string getmLastName( );

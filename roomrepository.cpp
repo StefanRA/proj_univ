@@ -1,4 +1,5 @@
 #include "roomrepository.h"
+#include "pch.h"
 
 Room* RoomRepository::findByName(std::string name) {
 	for (int i = 0; i < mEntities.size(); i++) {
