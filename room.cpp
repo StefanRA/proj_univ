@@ -2,9 +2,14 @@
 #include "room.h"
 #include <iostream>
 
-
-room::room(std::string name)
-{
-	mName = name;
+Room::Room(std::string name) {
+	this->mName = name;
 }
 
+void Room::setName(std::string name) {
+	this->mName = name;
+}
+
+std::string Room::getName() {
+	return this->mName;
+}

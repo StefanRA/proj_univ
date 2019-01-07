@@ -1,4 +1,5 @@
 #pragma once
+
 #include <string>
 #include <iostream>
 #include "discipline.h"
@@ -14,7 +15,4 @@ public:
 private:
 	float mGrade;
 	Discipline* mDiscipline;
-};
-
-
 };

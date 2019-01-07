@@ -36,14 +36,6 @@ long StudentRole::getGradesSize() {
 	return this->mGrades.size();
 }
 
-float StudentRole::getGradeByDiscipline(std::string name) {
-	std::vector<Grade*>::iterator it;
-	for (it = mGrades.begin(); it != mGrades.end(); it++) {
-		if ((*it)->getDiscipline() == name)
-			return (*it)->getGrade();
-	}
-	throw std::runtime_error("Discipline could not be found");
-}
 
 void StudentRole::setIDNumber(int IDNumber) {
 	this->mIDNumber = IDNumber;
@@ -96,6 +88,14 @@ void StudentRole::setStudyGroup(int studyGroup) {
 
 Grade *StudentRole::getGrade(int iterator) {
 	return this->mGrades[iterator];
+}
+float StudentRole::getGradeByDiscipline(std::string name) {
+	std::vector<Grade*>::iterator it;
+	for (it = mGrades.begin(); it != mGrades.end(); it++) {
+		if ((*it)->getDiscipline() == name)
+			return (*it)->getGrade();
+	}
+	throw std::runtime_error("Eroare! Disciplina nu s-a gasit.");
 }
 
 bool StudentRole::isGradeSet(Discipline *discipline) {

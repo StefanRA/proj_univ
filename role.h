@@ -4,21 +4,19 @@
 #include <vector>
 //#include "studentrole.h"
 
-class Role
-{
+class Role {
 public:
-	enum RoleType
-	{
-		STUDENT_ROLE,
-	    TEACHER_ROLE
+	enum RoleType {
+		STUDENT_ROLE = 1,
+		TEACHER_ROLE,
+		GUEST_ROLE,
+		ADMINISTRATIVE_ROLE
 	};
-
-public:
-	Role(RoleType);
- 
+	Role(RoleType type);
+	virtual ~Role() {}
+	RoleType getRole();
 private:
-    RoleType mType;
-	std::vector<Role*> mRoles;
+	RoleType mType;
 };
 
 

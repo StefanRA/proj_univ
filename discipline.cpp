@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "discipline.h"
 #include "studentrole.h"
+#include <iostream>
 
 Discipline::Discipline(std::string name, Activity* activity) {
 	this->mName = name;
