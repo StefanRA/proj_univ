@@ -18,7 +18,6 @@ void Student::citire() {
 	cin >> NrMatricol >> AnStudii >> FormaFinantare;
 }
 
-
 void Student::afisare() {
 	cout << NrMatricol << AnStudii << FormaFinantare;
 }

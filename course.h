@@ -1,11 +1,8 @@
 #pragma once
 #include "person.h"
 
-class course {
-
+class Course {
 public:
-	course();
-	~course();
 private:
 	
 };

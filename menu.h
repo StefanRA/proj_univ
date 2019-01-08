@@ -17,6 +17,8 @@ public:
 		REPOSITORY,
 		EXIT
 	};
+	//todo restul functiilor
+
 	bool CheckInput(std::string);
 	void StartMenu();
 	void PersonMenu();
@@ -24,6 +26,7 @@ public:
 	void DisciplineMenu();
 	void ClassBookMenu();
 	void RepositoryMenu();
+	void SearchInRepo();
 	void AddStudent();
 	void SearchStudent();
 	void CreateClassBook();

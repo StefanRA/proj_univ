@@ -22,7 +22,7 @@ Activity* Discipline::getActivity(std::string name) {
 		if (mActivities[i]->getDescription() == name)
 			return mActivities[i];
 	}
-	throw std::runtime_error("Activity does not exist!");
+	throw std::runtime_error("Eroare! Activitatea nu exista!");
 }
 
 std::vector<Activity*> Discipline::getActivities() {
@@ -56,7 +56,7 @@ void Discipline::removeActivity(std::string name) {
 		}
 	}
 	if (!valide)
-		throw std::runtime_error("Actvititatea nu exista!");
+		throw std::runtime_error("Eroare! Actvititatea nu exista!");
 }
 
 void Discipline::addParticipant(Person* person) {
@@ -81,7 +81,7 @@ void Discipline::removeParticipantByCnp(string CNP) {
 		}
 	}
 	if (!valide)
-		throw std::runtime_error("Persoana nu a putut fi gasita");
+		throw std::runtime_error("Eroare! Persoana nu a putut fi gasita");
 }
 
 void Discipline::removeByFullName(std::string firstName, std::string lastName) {
@@ -95,7 +95,7 @@ void Discipline::removeByFullName(std::string firstName, std::string lastName) {
 		}
 	}
 	if (!valide)
-		throw std::runtime_error("Persoana nu a putut fi gasita");
+		throw std::runtime_error("Eroare! Persoana nu a putut fi gasita");
 }
 
 long Discipline::getSizeActivities() {

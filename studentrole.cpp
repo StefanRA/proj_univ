@@ -5,7 +5,6 @@
 
 StudentRole::StudentRole():Role(Role::STUDENT_ROLE)
 {
-
 }
 
 StudentRole::StudentRole(int IDNumber, int studyYear, int studyGroup, std::string financialForm)
@@ -35,7 +34,6 @@ int StudentRole::getStudyGroup() {
 long StudentRole::getGradesSize() {
 	return this->mGrades.size();
 }
-
 
 void StudentRole::setIDNumber(int IDNumber) {
 	this->mIDNumber = IDNumber;

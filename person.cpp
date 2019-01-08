@@ -58,14 +58,12 @@ std::ostream & operator <<(std::ostream &out, const Person &p)
 {
 	out << p.mBirthday << p.mEmail << p.mCNP << p.mFirstName << p.mLastName;
 	return out;
-	
 }
 
 std::istream & operator >>(std::istream &in, Person &p)
 {
 	in >> p.mBirthday >> p.mEmail >> p.mCNP >> p.mFirstName >> p.mLastName;
 	return in;
-
 }
 
 void Person::addRole(Role* role)

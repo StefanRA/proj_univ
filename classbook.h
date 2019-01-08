@@ -28,5 +28,4 @@ private:
 	std::string mYear;
 	int mStudyGroup;
 	std::vector<Person*> mClassBook;
-
 };

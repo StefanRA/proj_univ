@@ -2,7 +2,6 @@
 #include "teacherrole.h"
 #include <iostream>
 
-
 TeacherRole::TeacherRole() :Role(Role::TEACHER_ROLE)
 {}
 
