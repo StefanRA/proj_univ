@@ -2,7 +2,6 @@
 #include "role.h"
 #include <iostream>
 
-#include "role.h"
 
 Role::Role(RoleType type) {
 	this->mType = type;

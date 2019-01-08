@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "person.h"
+#include "role.h"
 #include <string>
 #include <iostream>
 
